@@ -5,12 +5,12 @@ const main = (() => {
   return {
     iniciarPrograma: async () => {
       try {
-        const datosAnimales = await fetch("../../animales.json").then(response => response.json());
+        const datosAnimales = await fetch(`${location.origin}/animales.json`).then(response => response.json());
         formulario.escuchar(datosAnimales, (animal) => {
           listado.agregarAnimal(animal);
         });
       } catch (e) {
-        alert("Ocurrió un error al obtener los animales.")
+        alert('Ocurrió un error al intenta obtener los animales')
       }
     }
   }
