@@ -5,7 +5,7 @@ const main = (() => {
   return {
     iniciarPrograma: async () => {
       try {
-        const datosAnimales = await fetch(`${location.origin}/animales.json`).then(response => response.json());
+        const datosAnimales = await fetch(`${location.href}animales.json`).then(response => response.json());
         formulario.escuchar(datosAnimales, (animal) => {
           listado.agregarAnimal(animal);
         });
