@@ -59,7 +59,7 @@ export const formulario = (() => {
       const animal = datosAnimales.find(animal => {
         return animal.name == nombre;
       });
-      $("#preview").css("background-image", `url("/assets/imgs/${animal.imagen}")`);
+      $("#preview").css("background-image", `url("assets/imgs/${animal.imagen}")`);
     });
   }
 

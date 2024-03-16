@@ -28,7 +28,7 @@ export const listado = (() => {
     const col = $('<div class="col-4 mb-4 d-flex align-items-stretch">')
     const cardAnimal = $('<div class="card text-white bg-secondary" style="width: 100%;">');
     const cardBody = $('<div class="card-body">');
-    const img = $(`<img class="card-img" src ="/assets/imgs/${animal.Img}" >`);
+    const img = $(`<img class="card-img" src ="assets/imgs/${animal.Img}" >`);
     cardBody.click(function (e) { 
       e.preventDefault();
       modal.open(animal);
