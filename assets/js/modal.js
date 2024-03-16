@@ -1,7 +1,7 @@
 export const modal = (() => {
   function openModal(animal) {
     const cardAnimal = $('<div class="card text-white bg-secondary text-center" style="width: 100%;">');
-    const img = $(`<img class="card-img-top" src ="/assets/imgs/${animal.Img}" >`);
+    const img = $(`<img class="card-img-top" src ="assets/imgs/${animal.Img}" >`);
     cardAnimal.append(img)
     const cardBody = $('<div class="card-body">');
     const edad = $(`<h5>${animal.Edad}</h5>`);
